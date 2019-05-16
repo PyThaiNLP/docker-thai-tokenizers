@@ -1,5 +1,8 @@
-# Tokenisers for Thai
-Objectives
+# Thai Tokenisers
+
+This repository is a collection of almost all Thai tokenisers that are publicly available.
+Each project, or called  `vendor`, has its own Docker image with a `entry` script.
+This script brings a unified interface, allowing us to run those algorithms in the same way. Please see [Usages](#usages) for more details.
 
 ## Setup
 - Pull necessary Docker images. Please check [Docker Hub][dockerhub] for the avaliable images.
@@ -12,7 +15,7 @@ Objectives
   ```
   $ ./scripts/tokenise.sh <vendor-alias>:<method> <**filename**>
   ```
-  Please see [Vendors][vendors] for available vendors and methods.
+  Please check [Vendors section](#vendors) for available vendors and methods.
 
 ### Example
 Let's say you want to tokenise text in `./data/example.text` using PyThaiNLP's `newmm` algorithm. You can use the following command:
@@ -32,7 +35,6 @@ Tokenised text is written to /data/example_tokenised-pythainlp-newmm.text
 $ cat ./data/example_tokenised-pythainlp-newmm.text
 อันนี้|คือ|ตัวอย่าง
 ```
-Please check [Vendors section](#vendors) for available vendors and methods.
 
 
 ## Vendors 
