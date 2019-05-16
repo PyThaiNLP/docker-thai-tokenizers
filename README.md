@@ -12,13 +12,14 @@ Objectives
   ```
   $ ./scripts/tokenise.sh <vendor>:<method> <**filename**>
   ```
-  Please see [Vendors][#vendors] for available vendors and methods.
+  Please see [Vendors][vendors] for available vendors and methods.
 
 ### Example
 Let's say you want to tokenise text in `./data/example.text` using PyThaiNLP's `newmm` algorithm. You can use the following command:
 ```
 $ cat ./data/example.text
 อันนี้คือตัวอย่าง
+
 $ ./scripts/tokenise.sh pythainlp:newmm example.text
 # Please be aware that you don't need to have ./data in front of the filename.
 # Command Output
