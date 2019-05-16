@@ -2,14 +2,14 @@
 Objectives
 
 ## Setup
-- Pull necessary Docker images
+- Pull necessary Docker images. Please check [Docker Hub][dockerhub] for the avaliable images.
   ```
   $ docker pull thai-tokeniser:*
   ```
 - Put text files that you want to tokenise into `./data`.
 - Run the following command ...
   ```
-  $ ./tokenise.sh <vendor>:<method> <**filename**>
+  $ ./scripts/tokenise.sh <vendor>:<method> <**filename**>
   # for example: ./tokenise.sh pythainlp:newmm best-2010-TEST_100K.txt
   ```
   Please see [Vendors][#vendors] for available vendors and methods.
@@ -26,33 +26,19 @@ Objectives
 - ~~[Multi-Candidate-Word-Segmentation (MCWS)][mcws]~~: TBD.
 
 ## Development
+### Architecture
+TBD.
+
 ### Build a vendor's new Docker image
 ```
-$ ./build <vendor>
+$ ./scripts/build <vendor>
 ```
 **Remark:**
 - For `mcmw` you need to download its artifacts and keep them in `./vendors/mcmw/artifact`.
-
-
+### Push a new Docker image to Docker Hub
 ```
-docker run -v `pwd`/data:/data  thai-tokeniser:pythainlp newmm best-2010-TEST_100K.txt
+$ ./scripts/push <vendor>
 ```
-
-```
-
-tmp-build 
-  |- tokenise.sh
-  |- cat main.py >> vendor.py
-  | all from vendor
-
-vendors
-  |- pythainlp
-  |- cutkum
-
-tokenise.sh
-main.py
-```
-
 # Acknowledgements
 - .
 
@@ -62,3 +48,4 @@ main.py
 [cutkum]: https://github.com/pucktada/cutkum
 [tltk]: https://pypi.python.org/pypi/tltk/
 [swath]: https://github.com/tlwg/swath
+[dockerhub]: https://hub.docker.com/r/heytitle/thai-tokeniser/tags
