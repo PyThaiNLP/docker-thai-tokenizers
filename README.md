@@ -63,7 +63,7 @@ $ ./scripts/build <vendor>
 $ ./scripts/push <vendor>
 ```
 ## Acknowledgements
-- This repository is part of my internship at [Dr. Attapol Thamrongrattanarit][https://attapol.github.io]'s NLP Lab, Chulalongkorn University, Bangkok, Thailand.
+- This repository is part of my internship at [Dr. Attapol Thamrongrattanarit][ate]'s NLP Lab, Chulalongkorn University, Bangkok, Thailand.
 
 [pythainlp]: https://github.com/PyThaiNLP/pythainlp
 [deepcut]: https://github.com/rkcosmos/deepcut
