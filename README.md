@@ -36,15 +36,14 @@ Please check [Vendors section](#vendors) for available vendors and methods.
 
 
 ## Vendors 
-- [PyThaiNLP][pythainlp]: done
-    - engines: newmm, longest
-- [DeepCut][deepcut]: done
-- [CutKum][cutkum]: done
-- [Thai Language Toolkit][tltk]: done
-  - engines: mm, ngram, colloc 
-- [SWATH][swath]: 
-  - methods: max, long
-- ~~[Multi-Candidate-Word-Segmentation (MCWS)][mcws]~~: TBD.
+| Vendor | Alias | Available Methods |
+|---|---|---|---|---|
+| [PyThaiNLP][pythainlp] | pythainlp | newmm, longest  |
+| [DeepCut][deepcut] | deepcut |  deepcut  |
+| [CutKum][cutkum]  |  cutkum  |
+| [Thai Language Toolkit][tltk]  |  tltk | mm, ngram, colloc |
+| [Smart Word Analysis for THai][swath] | swath | max, long |
+| ~~[Multi-Candidate-Word-Segmentation (MCWS)][mcws]~~ (TODO) | |
 
 ## Development
 ### Architecture
