@@ -1,8 +1,11 @@
 # Thai Tokenisers
 
-This repository is a collection of almost all Thai tokenisers that are publicly available.
-Each project, or called  `vendor`, has its own Docker image with a `entry` script.
-This script brings a unified interface, allowing us to run those algorithms in the same way. Please see [Usages](#usages) for more details.
+This repository is a collection of almost all Thai tokenisers that are publicly available. Having this collection allows us to try each algorithm as ease via Docker.
+
+Technically, each project (called  `vendor`) has its own Docker image with a `entry` script and auxiliary scripts.
+These scripts bring a unified interface, allowing us to run those algorithms in the same way.
+
+Please see [Usages](#usages) for more details.
 
 ## Setup
 - Pull necessary Docker images. Please check [Docker Hub][dockerhub] for the avaliable images.
