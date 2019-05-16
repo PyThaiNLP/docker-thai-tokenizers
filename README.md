@@ -6,13 +6,33 @@ Objectives
   ```
   $ docker pull thai-tokeniser:*
   ```
-- Put text files that you want to tokenise into `./data`.
-- Run the following command ...
+## Usages
+1. Put text files that you want to tokenise into `./data`.
+2. Run the following command ...
   ```
   $ ./scripts/tokenise.sh <vendor>:<method> <**filename**>
-  # for example: ./tokenise.sh pythainlp:newmm best-2010-TEST_100K.txt
   ```
   Please see [Vendors][#vendors] for available vendors and methods.
+
+### Example
+Let's say you want to tokenise text in `./data/example.text` using PyThaiNLP's `newmm` algorithm. You can use the following command:
+```
+$ cat ./data/example.text
+อันนี้คือตัวอย่าง
+$ ./scripts/tokenise.sh pythainlp:newmm example.text
+# Please be aware that you don't need to have ./data in front of the filename.
+# Command Output
+Tokenising example.text using vendor=pythainlp and method=newmm
+CMD: docker run -v /Users/heytitle/projects/tokenisers-for-thai/data:/data  thai-tokeniser:pythainlp newmm example.text
+100%|██████████| 1/1 [00:00<00:00, 151.70it/s]
+Tokenising /data/example.text with newmm
+Tokenised text is written to /data/example_tokenised-pythainlp-newmm.text
+
+$ cat ./data/example_tokenised-pythainlp-newmm.text
+อันนี้|คือ|ตัวอย่าง
+```
+Please check [Vendors section][vendors] for available vendors and methods.
+
 
 ## Vendors 
 - [PyThaiNLP][pythainlp]: done
