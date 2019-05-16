@@ -9,7 +9,8 @@ Objectives
 - Put text files that you want to tokenise into `./data`.
 - Run the following command ...
   ```
-  $ ./tokenise <vendor>:<method> <filename>
+  $ ./tokenise.sh <vendor>:<method> <**filename**>
+  # for example: ./tokenise.sh pythainlp:newmm best-2010-TEST_100K.txt
   ```
   Please see [Vendors][#vendors] for available vendors and methods.
 
@@ -17,11 +18,12 @@ Objectives
 - [PyThaiNLP][pythainlp]: done
     - engines: newmm, longest
 - [DeepCut][deepcut]: done
-- [Multi-Candidate-Word-Segmentation (MCWS)][mcws]: ..
 - [CutKum][cutkum]: done
 - [Thai Language Toolkit][tltk]: done
   - engines: mm, ngram, colloc 
-- [SWATH][swath]: c..
+- [SWATH][swath]: 
+  - methods: max, long
+- ~~[Multi-Candidate-Word-Segmentation (MCWS)][mcws]~~: TBD.
 
 ## Development
 ### Build a vendor's new Docker image
