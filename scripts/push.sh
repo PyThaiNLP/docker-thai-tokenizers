@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPO=thai-tokeniser
+REPO=thai-tokenisers
 USER=heytitle
 VENDOR=$1
 TAG=$USER/$REPO:$VENDOR

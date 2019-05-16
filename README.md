@@ -5,12 +5,22 @@ This repository is a collection of almost all Thai tokenisers that are publicly 
 Technically, each project (called  `vendor`) has its own Docker image with a `entry` script and auxiliary scripts.
 These scripts bring a unified interface, allowing us to run those algorithms in the same way.
 
+## Vendors 
+| Vendor | Alias | Available Methods |
+|---|---|---|
+| [PyThaiNLP][pythainlp] | pythainlp | newmm, longest  |
+| [DeepCut][deepcut] | deepcut |  deepcut  |
+| [CutKum][cutkum]  |  cutkum  | cutkum |
+| [Thai Language Toolkit][tltk]  |  tltk | mm, ngram, colloc |
+| [Smart Word Analysis for Thai (SWATH)][swath] | swath | max, long |
+| ~~[Multi-Candidate-Word-Segmentation (MCWS)][mcws]~~ (TODO) | |
+
 Please see [Usages](#usages) for more details.
 
 ## Setup
 - Pull necessary Docker images. Please check [Docker Hub][dockerhub] for the avaliable images.
   ```
-  $ docker pull thai-tokeniser:*
+  $ docker pull heytitle/thai-tokeniser:<vendor-alias>
   ```
 ## Usages
 1. Put text files that you want to tokenise into `./data`.
@@ -38,17 +48,6 @@ Tokenised text is written to /data/example_tokenised-pythainlp-newmm.text
 $ cat ./data/example_tokenised-pythainlp-newmm.text
 อันนี้|คือ|ตัวอย่าง
 ```
-
-
-## Vendors 
-| Vendor | Alias | Available Methods |
-|---|---|---|
-| [PyThaiNLP][pythainlp] | pythainlp | newmm, longest  |
-| [DeepCut][deepcut] | deepcut |  deepcut  |
-| [CutKum][cutkum]  |  cutkum  | cutkum |
-| [Thai Language Toolkit][tltk]  |  tltk | mm, ngram, colloc |
-| [Smart Word Analysis for Thai (SWATH)][swath] | swath | max, long |
-| ~~[Multi-Candidate-Word-Segmentation (MCWS)][mcws]~~ (TODO) | |
 
 ## Development
 ### Architecture

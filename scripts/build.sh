@@ -15,7 +15,7 @@ EOM
 echo "$MAIN" >> $TMP_BUILD_DIR/vendor.py
 
 cd $TMP_BUILD_DIR \
-    && docker build -t thai-tokeniser:$VENDOR .
+    && docker build -t thai-tokenisers:$VENDOR .
 
 cd .. \
     && rm -rf $TMP_BUILD_DIR \
