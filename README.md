@@ -58,7 +58,7 @@ $ ./scripts/build <vendor>
 ```
 $ ./scripts/push <vendor>
 ```
-# Acknowledgements
+## Acknowledgements
 - .
 
 [pythainlp]: https://github.com/PyThaiNLP/pythainlp
