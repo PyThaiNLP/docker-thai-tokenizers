@@ -10,7 +10,7 @@ Objectives
 1. Put text files that you want to tokenise into `./data`.
 2. Run the following command ...
   ```
-  $ ./scripts/tokenise.sh <vendor>:<method> <**filename**>
+  $ ./scripts/tokenise.sh <vendor-alias>:<method> <**filename**>
   ```
   Please see [Vendors][vendors] for available vendors and methods.
 
@@ -42,7 +42,7 @@ Please check [Vendors section](#vendors) for available vendors and methods.
 | [DeepCut][deepcut] | deepcut |  deepcut  |
 | [CutKum][cutkum]  |  cutkum  | cutkum |
 | [Thai Language Toolkit][tltk]  |  tltk | mm, ngram, colloc |
-| [Smart Word Analysis for THai][swath] | swath | max, long |
+| [Smart Word Analysis for Thai (SWATH)][swath] | swath | max, long |
 | ~~[Multi-Candidate-Word-Segmentation (MCWS)][mcws]~~ (TODO) | |
 
 ## Development
