@@ -32,7 +32,7 @@ Tokenised text is written to /data/example_tokenised-pythainlp-newmm.text
 $ cat ./data/example_tokenised-pythainlp-newmm.text
 อันนี้|คือ|ตัวอย่าง
 ```
-Please check [Vendors section][vendors] for available vendors and methods.
+Please check [Vendors section](#vendors) for available vendors and methods.
 
 
 ## Vendors 
