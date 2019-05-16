@@ -63,7 +63,7 @@ $ ./scripts/build <vendor>
 $ ./scripts/push <vendor>
 ```
 ## Acknowledgements
-- This repository is part of my internship at [Dr. Attapol Thamrongrattanarit][ate]'s NLP Lab, Chulalongkorn University, Bangkok, Thailand.
+- This repository is part of my internship at [Dr. Attapol Thamrongrattanarit's NLP Lab][ate], Chulalongkorn University, Bangkok, Thailand.
 
 [pythainlp]: https://github.com/PyThaiNLP/pythainlp
 [deepcut]: https://github.com/rkcosmos/deepcut
@@ -72,4 +72,4 @@ $ ./scripts/push <vendor>
 [tltk]: https://pypi.python.org/pypi/tltk/
 [swath]: https://github.com/tlwg/swath
 [dockerhub]: https://hub.docker.com/r/heytitle/thai-tokeniser/tags
-[ate]: https://attapol.github.io
+[ate]: https://attapol.github.io/lab.html
