@@ -1,0 +1,11 @@
+#!/bin/sh
+
+VENDOR="swath"
+METHOD=$1
+INPUT=$2
+
+FILENAME="${INPUT%.*}"
+EXT="${INPUT##*.}"
+
+OUTPUT="/data/${FILENAME}_tokenised-$VENDOR-$METHOD.$EXT"
+cat /data/$INPUT | swath -u u,u -m $METHOD > $OUTPUT 
