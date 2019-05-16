@@ -8,4 +8,6 @@ FILENAME="${INPUT%.*}"
 EXT="${INPUT##*.}"
 
 OUTPUT="/data/${FILENAME}_tokenised-$VENDOR-$METHOD.$EXT"
-cat /data/$INPUT | swath -u u,u -m $METHOD > $OUTPUT 
+
+cat /data/$INPUT | swath -u u,u -m $METHOD > $OUTPUT \
+    && echo "Result is written to $OUTPUT"

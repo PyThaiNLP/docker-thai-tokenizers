@@ -17,4 +17,6 @@ echo "$MAIN" >> $TMP_BUILD_DIR/vendor.py
 cd $TMP_BUILD_DIR \
     && docker build -t thai-tokeniser:$VENDOR .
 
-rm -rf $TMP_BUILD_DIR
+cd .. \
+    && rm -rf $TMP_BUILD_DIR \
+    && echo "Built and cleanup done!"
