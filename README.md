@@ -37,10 +37,10 @@ Please check [Vendors section](#vendors) for available vendors and methods.
 
 ## Vendors 
 | Vendor | Alias | Available Methods |
-|---|---|---|---|---|
+|---|---|---|
 | [PyThaiNLP][pythainlp] | pythainlp | newmm, longest  |
 | [DeepCut][deepcut] | deepcut |  deepcut  |
-| [CutKum][cutkum]  |  cutkum  |
+| [CutKum][cutkum]  |  cutkum  | cutkum |
 | [Thai Language Toolkit][tltk]  |  tltk | mm, ngram, colloc |
 | [Smart Word Analysis for THai][swath] | swath | max, long |
 | ~~[Multi-Candidate-Word-Segmentation (MCWS)][mcws]~~ (TODO) | |
