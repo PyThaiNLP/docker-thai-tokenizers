@@ -33,8 +33,7 @@ TBD.
 ```
 $ ./scripts/build <vendor>
 ```
-**Remark:**
-- For `mcmw` you need to download its artifacts and keep them in `./vendors/mcmw/artifact`.
+
 ### Push a new Docker image to Docker Hub
 ```
 $ ./scripts/push <vendor>
