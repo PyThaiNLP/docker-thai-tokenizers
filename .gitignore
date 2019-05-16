@@ -1,1 +1,4 @@
 artifact
+tmp-build
+data/*.txt
+.vscode
