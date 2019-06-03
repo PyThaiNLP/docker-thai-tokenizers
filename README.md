@@ -14,6 +14,8 @@ These scripts bring a unified interface, allowing us to run those algorithms in 
 | [Thai Language Toolkit][tltk]  |  tltk | mm, ngram, colloc |
 | [Smart Word Analysis for Thai (SWATH)][swath] | swath | max, long |
 | ~~[Multi-Candidate-Word-Segmentation (MCWS)][mcws]~~ (TODO) | |
+| ~~SynThai~~ (TODO) | |
+| ~~Sertis~~ (TODO) | |
 
 Please see [Usages](#usages) for more details.
 
@@ -26,7 +28,7 @@ Please see [Usages](#usages) for more details.
 1. Put text files that you want to tokenise into `./data`.
 2. Run the following command ...
   ```
-  $ ./scripts/tokenise.sh <vendor-alias>:<method> <**filename**>
+  $ ./scripts/tokenise.sh <vendor-alias>-<method> <**filename**>
   ```
   Please check [Vendors section](#vendors) for available vendors and methods.
 

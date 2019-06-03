@@ -1,4 +1,7 @@
-from pythainlp.tokenize import word_tokenize
+from pythainlp.tokenize import word_tokenize, syllable_tokenize
 
 def tokeniser(sentence, method):
-    return word_tokenize(sentence, engine=method)
+    if method == "syllable":
+        return syllable_tokenize(sentence)
+    else:
+        return word_tokenize(sentence, engine=method)
