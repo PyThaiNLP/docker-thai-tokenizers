@@ -10,13 +10,13 @@ These scripts bring a unified interface, allowing us to run those algorithms in 
 ## Vendors 
 | Vendor | Alias | Available Methods | Docker Image |
 |---|---|---| --- |
-| [PyThaiNLP][pythainlp] | pythainlp | newmm, longest  | ![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/pythainlp.svg)|
-| [DeepCut][deepcut] | deepcut |  deepcut  | ![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/deepcut.svg)|
-| [CutKum][cutkum]  |  cutkum  | cutkum | ![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/cutkum.svg)|
-| [Sertis][sertis] | sertis | sertis | ![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/sertis.svg) |
-| [Thai Language Toolkit][tltk]  |  tltk | mm, ngram, colloc | ![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/tltk.svg)|
-| [Smart Word Analysis for Thai (SWATH)][swath] | swath | max, long |![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/swath.svg) |
-| [Chrome's v8Breakiterator][chromev8] | chrome | v8breakiterator |![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/chrome.svg) |
+| [PyThaiNLP][pythainlp] | pythainlp | newmm, longest  | ![](https://images.microbadger.com/badges/image/pythainlp/word-tokenizers:pythainlp.svg)|
+| [DeepCut][deepcut] | deepcut |  deepcut  | ![](https://images.microbadger.com/badges/image/pythainlp/word-tokenizers:deepcut.svg)|
+| [CutKum][cutkum]  |  cutkum  | cutkum | ![](https://images.microbadger.com/badges/image/pythainlp/word-tokenizers:cutkum.svg)|
+| [Sertis][sertis] | sertis | sertis | ![](https://images.microbadger.com/badges/image/pythainlp/word-tokenizers:sertis.svg) |
+| [Thai Language Toolkit][tltk]  |  tltk | mm, ngram, colloc | ![](https://images.microbadger.com/badges/image/pythainlp/word-tokenizers:tltk.svg)|
+| [Smart Word Analysis for Thai (SWATH)][swath] | swath | max, long |![](https://images.microbadger.com/badges/image/pythainlp/word-tokenizers:swath.svg) |
+| [Chrome's v8Breakiterator][chromev8] | chrome | v8breakiterator |![](https://images.microbadger.com/badges/image/pythainlp/word-tokenizers:chrome.svg) |
 
 Please see [Usages](#usages) for more details.
 
