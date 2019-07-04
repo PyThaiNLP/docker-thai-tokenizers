@@ -1,4 +1,5 @@
 # Thai Tokenisers
+![](https://img.shields.io/docker/pulls/pythainlp/docker.io/pythainlp/word-tokenizers/.svg)
 
 This repository is a collection of almost all Thai tokenisers that are publicly available. Having this collection allows us to try each algorithm as ease via Docker.
 
@@ -6,16 +7,16 @@ Technically, each project (called  `vendor`) has its own Docker image with a `en
 These scripts bring a unified interface, allowing us to run those algorithms in the same way.
 
 ## Vendors 
-| Vendor | Alias | Available Methods |
+| Vendor | Alias | Available Methods | Docker Image |
 |---|---|---|
-| [PyThaiNLP][pythainlp] | pythainlp | newmm, longest  |
-| [DeepCut][deepcut] | deepcut |  deepcut  |
-| [CutKum][cutkum]  |  cutkum  | cutkum |
-| [Thai Language Toolkit][tltk]  |  tltk | mm, ngram, colloc |
-| [Smart Word Analysis for Thai (SWATH)][swath] | swath | max, long |
+| [PyThaiNLP][pythainlp] | pythainlp | newmm, longest  | |
+| [DeepCut][deepcut] | deepcut |  deepcut  | |
+| [CutKum][cutkum]  |  cutkum  | cutkum | |
+| [Sertis][sertis] | sertis | sertis | ![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/sertis.svg) |
+| [Thai Language Toolkit][tltk]  |  tltk | mm, ngram, colloc | |
+| [Smart Word Analysis for Thai (SWATH)][swath] | swath | max, long | |
 | ~~[Multi-Candidate-Word-Segmentation (MCWS)][mcws]~~ (TODO) | |
 | ~~SynThai~~ (TODO) | |
-| ~~Sertis~~ (TODO) | |
 
 Please see [Usages](#usages) for more details.
 
@@ -30,7 +31,7 @@ Please see [Usages](#usages) for more details.
   ```
   $ ./scripts/tokenise.sh <vendor-alias>-<method> <**filename**>
   ```
-  Please check [Vendors section](#vendors) for available vendors and methods.
+  Please check [Vendors section](#vendors) for vendors and methods included here.
 
 ### Example
 Let's say you want to tokenise text in `./data/example.text` using PyThaiNLP's `newmm` algorithm. You can use the following command:
@@ -64,8 +65,9 @@ $ ./scripts/build <vendor>
 ```
 $ ./scripts/push <vendor>
 ```
+
 ## Acknowledgements
-- This repository is part of my internship at [Dr. Attapol Thamrongrattanarit's NLP Lab][ate], Chulalongkorn University, Bangkok, Thailand.
+- This repository was initially done by [Pattarawat Chormai][pat], whiling interning at [Dr. Attapol Thamrongrattanarit's NLP Lab][ate], Chulalongkorn University, Bangkok, Thailand.
 
 [pythainlp]: https://github.com/PyThaiNLP/pythainlp
 [deepcut]: https://github.com/rkcosmos/deepcut
@@ -75,3 +77,5 @@ $ ./scripts/push <vendor>
 [swath]: https://github.com/tlwg/swath
 [dockerhub]: https://hub.docker.com/r/heytitle/thai-tokeniser/tags
 [ate]: https://attapol.github.io/lab.html
+[sertis]: https://github.com/sertiscorp/thai-word-segmentation
+[pat]: http://pat.chormai.org
