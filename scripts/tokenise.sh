@@ -7,7 +7,7 @@ VENDOR=$(echo "$VE" | sed 's/-.*$//')
 METHOD=$(echo "$VE" | sed 's/^.*-//')
 echo "Tokenising $INPUT using vendor=$VENDOR and method=$METHOD"
 
-CMD="docker run -v `pwd`/data:/data  thai-tokenisers:$VENDOR $METHOD $INPUT"
+CMD="docker run -v `pwd`/data:/data word-tokenizers:$VENDOR $METHOD $INPUT"
 
 echo "CMD: $CMD"
 
