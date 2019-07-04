@@ -1,10 +1,11 @@
 #!/bin/bash
 
-REPO=thai-tokenisers
-USER=heytitle
+REPO=word-tokenizers
+USER=pythainlp
 VENDOR=$1
 TAG=$USER/$REPO:$VENDOR
 
-docker tag $REPO:$VENDOR $TAG \
+./scripts/build.sh $VENDOR \
+    && docker tag $REPO:$VENDOR $TAG \
     && docker push $TAG \
     && echo "Pushed $TAG"
