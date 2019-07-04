@@ -1,5 +1,5 @@
 # Thai Word Tokenizers
-![](https://img.shields.io/docker/pulls/pythainlp/word-tokenizers.svg)
+![https://hub.docker.com/r/pythainlp/word-tokenizers/tags](https://img.shields.io/docker/pulls/pythainlp/word-tokenizers.svg)
 
 This repository is a collection of almost all Thai tokenisers that are publicly available. Having this collection allows us to try each algorithm as ease via Docker.
 
