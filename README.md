@@ -8,7 +8,7 @@ Technically, each project (called  `vendor`) has its own Docker image with a `en
 These scripts bring a unified interface, allowing us to run those algorithms in the same way.
 
 ## Vendors 
-| Vendor | Alias | Available Methods | Docker Image |
+| Vendor | Alias | Available Methods | Container Profile |
 |---|---|---| --- |
 | [PyThaiNLP][pythainlp] | pythainlp | newmm, longest  | ![](https://images.microbadger.com/badges/image/pythainlp/word-tokenizers:pythainlp.svg)|
 | [DeepCut][deepcut] | deepcut |  deepcut  | ![](https://images.microbadger.com/badges/image/pythainlp/word-tokenizers:deepcut.svg)|
