@@ -9,12 +9,12 @@ These scripts bring a unified interface, allowing us to run those algorithms in 
 ## Vendors 
 | Vendor | Alias | Available Methods | Docker Image |
 |---|---|---| --- |
-| [PyThaiNLP][pythainlp] | pythainlp | newmm, longest  | |
-| [DeepCut][deepcut] | deepcut |  deepcut  | |
-| [CutKum][cutkum]  |  cutkum  | cutkum | |
+| [PyThaiNLP][pythainlp] | pythainlp | newmm, longest  | ![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/pythainlp.svg)|
+| [DeepCut][deepcut] | deepcut |  deepcut  | ![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/deepcut.svg)|
+| [CutKum][cutkum]  |  cutkum  | cutkum | ![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/cutkum.svg)|
 | [Sertis][sertis] | sertis | sertis | ![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/sertis.svg) |
-| [Thai Language Toolkit][tltk]  |  tltk | mm, ngram, colloc | |
-| [Smart Word Analysis for Thai (SWATH)][swath] | swath | max, long | |
+| [Thai Language Toolkit][tltk]  |  tltk | mm, ngram, colloc | ![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/tltk.svg)|
+| [Smart Word Analysis for Thai (SWATH)][swath] | swath | max, long |![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/swath.svg) |
 | ~~[Multi-Candidate-Word-Segmentation (MCWS)][mcws]~~ (TODO) | | | |
 | ~~SynThai~~ (TODO) | | | |
 
