@@ -1,6 +1,5 @@
 # Thai Word Tokenizers
-[![](https://img.shields.io/docker/pulls/pythainlp/word-tokenizers.svg)](https://hub.docker.com/r/pythainlp/word-tokenizers/tags)
-
+(![](https://img.shields.io/docker/pulls/pythainlp/word-tokenizers.svg)[https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/pythainlp.svg]
 
 This repository is a collection of almost all Thai tokenisers that are publicly available. Having this collection allows us to try each algorithm as ease via Docker.
 
@@ -16,8 +15,7 @@ These scripts bring a unified interface, allowing us to run those algorithms in 
 | [Sertis][sertis] | sertis | sertis | ![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/sertis.svg) |
 | [Thai Language Toolkit][tltk]  |  tltk | mm, ngram, colloc | ![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/tltk.svg)|
 | [Smart Word Analysis for Thai (SWATH)][swath] | swath | max, long |![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/swath.svg) |
-| ~~[Multi-Candidate-Word-Segmentation (MCWS)][mcws]~~ (TODO) | | | |
-| ~~SynThai~~ (TODO) | | | |
+| [Chrome's v8Breakiterator][chromev8] | chrome | v8breakiterator |![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/chrome.svg) |
 
 Please see [Usages](#usages) for more details.
 
@@ -72,7 +70,6 @@ $ ./scripts/push <vendor>
 
 [pythainlp]: https://github.com/PyThaiNLP/pythainlp
 [deepcut]: https://github.com/rkcosmos/deepcut
-[mcws]: https://github.com/earthy123/Multi-Candidate-Word-Segmentation
 [cutkum]: https://github.com/pucktada/cutkum
 [tltk]: https://pypi.python.org/pypi/tltk/
 [swath]: https://github.com/tlwg/swath
