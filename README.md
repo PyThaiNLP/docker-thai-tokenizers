@@ -8,15 +8,15 @@ These scripts bring a unified interface, allowing us to run those algorithms in 
 
 ## Vendors 
 | Vendor | Alias | Available Methods | Docker Image |
-|---|---|---|
+|---|---|---| --- |
 | [PyThaiNLP][pythainlp] | pythainlp | newmm, longest  | |
 | [DeepCut][deepcut] | deepcut |  deepcut  | |
 | [CutKum][cutkum]  |  cutkum  | cutkum | |
 | [Sertis][sertis] | sertis | sertis | ![](https://img.shields.io/microbadger/image-size/pythainlp/word-tokenizers/sertis.svg) |
 | [Thai Language Toolkit][tltk]  |  tltk | mm, ngram, colloc | |
 | [Smart Word Analysis for Thai (SWATH)][swath] | swath | max, long | |
-| ~~[Multi-Candidate-Word-Segmentation (MCWS)][mcws]~~ (TODO) | |
-| ~~SynThai~~ (TODO) | |
+| ~~[Multi-Candidate-Word-Segmentation (MCWS)][mcws]~~ (TODO) | | | |
+| ~~SynThai~~ (TODO) | | | |
 
 Please see [Usages](#usages) for more details.
 
