@@ -1,4 +1,4 @@
 artifact
 tmp-build
-data/*.txt
+data
 .vscode
