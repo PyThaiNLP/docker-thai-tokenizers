@@ -77,3 +77,4 @@ $ ./scripts/push <vendor>
 [ate]: https://attapol.github.io/lab.html
 [sertis]: https://github.com/sertiscorp/thai-word-segmentation
 [pat]: http://pat.chormai.org
+[chromev8]: https://chromium.googlesource.com/external/v8-i18n/+/3bd86474e6728097a22381ce46f1efa5b0a3c7d5/src/break-iterator.cc
