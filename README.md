@@ -23,7 +23,7 @@ Please see [Usages](#usages) for more details.
 ## Setup
 - Pull necessary Docker images. Please check [Docker Hub][dockerhub] for the avaliable images.
   ```
-  $ docker pull heytitle/thai-tokeniser:<vendor-alias>
+  $ docker pull pythainlp/word-tokenizers:<vendor-alias>
   ```
 ## Usages
 1. Put text files that you want to tokenise into `./data`.
@@ -74,7 +74,7 @@ $ ./scripts/push <vendor>
 [cutkum]: https://github.com/pucktada/cutkum
 [tltk]: https://pypi.python.org/pypi/tltk/
 [swath]: https://github.com/tlwg/swath
-[dockerhub]: https://hub.docker.com/r/heytitle/thai-tokeniser/tags
+[dockerhub]: https://hub.docker.com/r/pythainlp/word-tokenizers/tags
 [ate]: https://attapol.github.io/lab.html
 [sertis]: https://github.com/sertiscorp/thai-word-segmentation
 [pat]: http://pat.chormai.org
