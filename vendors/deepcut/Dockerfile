@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.13.1-py3
+FROM tensorflow/tensorflow:2.1.0-py3
 
 WORKDIR /usr/src
 
