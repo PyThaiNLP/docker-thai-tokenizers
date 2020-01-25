@@ -4,7 +4,7 @@ WORKDIR /usr/src
 
 RUN pip install --upgrade pip && pip install cutkum tqdm
 
-COPY vendor.py .
-COPY entry .
+COPY vendors/cutkum/vendor.py .
+COPY vendors/cutkum/entry .
 
 ENTRYPOINT [ "bash", "entry"]
