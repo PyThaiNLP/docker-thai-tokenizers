@@ -4,7 +4,7 @@ WORKDIR /usr/src
 
 # RUN pip install --upgrade pip && pip install cutkum tqdm
 
-COPY vendors/deepcut/vendor.js .
-COPY vendors/deepcut/entry .
+COPY vendors/chrome/vendor.js .
+COPY vendors/chrome/entry .
 
 ENTRYPOINT [ "bash", "entry"]
