@@ -17,7 +17,7 @@ RUN pip install --upgrade pip \
     && pip install tqdm \
     && pip install -r requirements.txt
 
-COPY vendor.py .
-COPY entry .
+COPY vendors/sertis/vendor.py .
+COPY vendors/sertis/entry .
 
 ENTRYPOINT [ "bash", "entry"]
