@@ -21,6 +21,6 @@ RUN mkdir -p /tmp/swath \
     | tar --strip-components=1 -xJ \
     && ./configure && make && make check && make install
 
-COPY entry .
+COPY vendors/swath/entry .
 
 ENTRYPOINT [ "bash", "entry" ]

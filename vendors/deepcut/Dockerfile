@@ -4,7 +4,7 @@ WORKDIR /usr/src
 
 RUN pip install --upgrade pip && pip install deepcut tqdm
 
-COPY vendor.py .
-COPY entry .
+COPY vendors/deepcut/vendor.py .
+COPY vendors/deepcut/entry .
 
 ENTRYPOINT [ "bash", "entry"]
