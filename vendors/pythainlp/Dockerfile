@@ -4,7 +4,7 @@ WORKDIR /usr/src
 
 RUN apk update && apk add build-base bash
 
-RUN pip install --upgrade pip && pip install pythainlp==2.1.4
+RUN pip install --upgrade pip && pip install pythainlp==2.1.4 numpy
 
 COPY vendors/pythainlp/vendor.py .
 COPY vendors/pythainlp/entry .
