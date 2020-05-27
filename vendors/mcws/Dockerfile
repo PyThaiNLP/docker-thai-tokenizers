@@ -11,7 +11,7 @@ WORKDIR /app
 RUN pip install --upgrade pip && pip install numpy
 
 COPY artifact/* /app/
-COPY vendors/mcws/vendor.py .
-COPY vendors/mcws/entry .
+COPY vendor.py .
+COPY entry .
 
 # ENTRYPOINT [ "bash", "entry"]

@@ -8,7 +8,7 @@ ENV LC_ALL "en_US.UTF-8"
 
 RUN pip install --upgrade pip && pip install tltk matplotlib
 
-COPY vendors/tltk/vendor.py .
-COPY vendors/tltk/entry .
+COPY vendor.py .
+COPY entry .
 
 ENTRYPOINT [ "bash", "entry" ]
