@@ -1,0 +1,22 @@
+name: Publish Docker
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: build
+      run: |
+        ./scripts/build pythainlp
+        ./scripts/build deepcut
+        ./scripts/build cutkum
+        ./scripts/build sertis
+        ./scripts/build tltk
+        ./scripts/build swath
+        ./scripts/build chrome
+    - name: Publish to Registry
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: pythainlp/word-tokenizers
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
