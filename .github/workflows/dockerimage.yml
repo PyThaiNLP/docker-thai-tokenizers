@@ -7,13 +7,13 @@ jobs:
     - uses: actions/checkout@master
     - name: build
       run: |
-        ./scripts/build pythainlp
-        ./scripts/build deepcut
-        ./scripts/build cutkum
-        ./scripts/build sertis
-        ./scripts/build tltk
-        ./scripts/build swath
-        ./scripts/build chrome
+        ./scripts/build.sh pythainlp
+        ./scripts/build.sh deepcut
+        ./scripts/build.sh cutkum
+        ./scripts/build.sh sertis
+        ./scripts/build.sh tltk
+        ./scripts/build.sh swath
+        ./scripts/build.sh chrome
     - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
